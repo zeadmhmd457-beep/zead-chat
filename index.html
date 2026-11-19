@@ -4,24 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b2a">
   <title>ZEAD CHAT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="app">
-    <header>
-      <h2>ZEAD CHAT</h2>
-      <p>تواصل مع أصحابك في أي وقت</p>
+    <header class="top">
+      <div>
+        <h2>ZEAD CHAT</h2>
+        <p>تواصل بلا حدود 💬</p>
+      </div>
+      <button id="logout">خروج</button>
     </header>
 
     <main id="main">
       <section id="login">
         <h2>أهلاً بيك 👋</h2>
-        <input id="username" placeholder="اسم المستخدم">
+        <input id="name" placeholder="اسمك">
+        <input id="email" type="email" placeholder="البريد الإلكتروني">
         <input id="password" type="password" placeholder="كلمة المرور">
+        <button id="register">إنشاء حساب</button>
         <button id="loginBtn">تسجيل الدخول</button>
-        <button id="registerBtn">إنشاء حساب جديد</button>
+        <p id="status"></p>
       </section>
     </main>
   </div>
@@ -29,3 +34,4 @@
   <script type="module" src="script.js"></script>
 </body>
 </html>
+
